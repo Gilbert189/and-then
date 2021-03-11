@@ -1,4 +1,5 @@
 import re, sys
+# why do i make this
 sys.excepthook = lambda exctype,exc,traceback : print("{}: {}".format(exctype.__name__,exc),file=sys.stderr)
 code = open(sys.argv[1], "r+").read()
 if re.findall("^(?:#\(lalalagrrrrrrrkaboom\)pffffzipcodeadressdenied<.+?, AUTHOR\([A-Z]+?\)> and then start; define start as this big thing past the colon: )",code):
